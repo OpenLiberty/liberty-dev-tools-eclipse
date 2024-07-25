@@ -38,7 +38,9 @@
                     <useUIThread>false</useUIThread>
                     <providerHint>junit5</providerHint>
                     <trimStackTrace>false</trimStackTrace>
+                    <!--
                     <runOrder>alphabetical</runOrder>
+                    -->
                     <systemProperties>
                         <org.eclipse.swtbot.search.timeout>20000</org.eclipse.swtbot.search.timeout>
                         <io.liberty.tools.eclipse.tests.mvn.logfile>${mvnLogFile}</io.liberty.tools.eclipse.tests.mvn.logfile>
@@ -125,7 +127,9 @@
                             <version>${tycho-version}</version>
                             <configuration>
                                 <argLine>-XstartOnFirstThread</argLine>
+                                <!--
                                 <runOrder>alphabetical</runOrder>
+                                -->
                             </configuration>
                         </plugin>
                     </plugins>
